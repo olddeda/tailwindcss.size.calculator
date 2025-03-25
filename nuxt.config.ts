@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  ssr: false,
+  
   devtools: { enabled: true },
 
   modules: [
@@ -12,5 +14,13 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
-  compatibilityDate: '2024-11-27'
+  compatibilityDate: '2024-11-27',
+  
+  nitro: {
+    output: {
+      dir: '.output',
+      serverDir: '.output/server',
+      publicDir: 'docs'
+    }
+  }
 })
