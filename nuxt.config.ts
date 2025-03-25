@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   
   app: {
-    baseURL: '/tailwindcss.size.calculator/docs/'
+    baseURL: '/tailwindcss.size.calculator/'
   },
 
   modules: [
